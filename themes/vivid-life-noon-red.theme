@@ -1,0 +1,13 @@
+[Scheme]
+Name=Vivid Life · Noon · Red
+ColorForeground=#171717
+ColorBackground=#ffffff
+ColorCursor=#b91c1c
+ColorCursorForeground=#ffffff
+ColorCursorUseDefault=FALSE
+ColorSelection=#171717
+ColorSelectionBackground=#eabbbb
+ColorSelectionUseDefault=FALSE
+ColorBoldUseDefault=TRUE
+TabActivityColor=#713f12
+ColorPalette=#171717;#b91c1c;#4d7c0f;#a16207;#1d4ed8;#7e22ce;#0e7490;#404040;#737373;#7f1d1d;#365314;#713f12;#1e3a8a;#581c87;#164e63;#d4d4d4

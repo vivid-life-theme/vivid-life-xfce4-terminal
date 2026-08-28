@@ -1,0 +1,13 @@
+[Scheme]
+Name=Vivid Life · Midnight · Purple
+ColorForeground=#f5f5f5
+ColorBackground=#0a0a0a
+ColorCursor=#d8b4fe
+ColorCursorForeground=#0a0a0a
+ColorCursorUseDefault=FALSE
+ColorSelection=#f5f5f5
+ColorSelectionBackground=#483d53
+ColorSelectionUseDefault=FALSE
+ColorBoldUseDefault=TRUE
+TabActivityColor=#fde047
+ColorPalette=#0a0a0a;#ef4444;#84cc16;#eab308;#93c5fd;#d8b4fe;#06b6d4;#d4d4d4;#878787;#fca5a5;#bef264;#fde047;#93c5fd;#d8b4fe;#67e8f9;#f5f5f5

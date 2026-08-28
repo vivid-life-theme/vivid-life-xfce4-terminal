@@ -1,0 +1,13 @@
+[Scheme]
+Name=Vivid Life · Twilight · Yellow
+ColorForeground=#f5f5f5
+ColorBackground=#171717
+ColorCursor=#eab308
+ColorCursorForeground=#171717
+ColorCursorUseDefault=FALSE
+ColorSelection=#f5f5f5
+ColorSelectionBackground=#564612
+ColorSelectionUseDefault=FALSE
+ColorBoldUseDefault=TRUE
+TabActivityColor=#fef9c3
+ColorPalette=#171717;#fca5a5;#84cc16;#eab308;#93c5fd;#d8b4fe;#06b6d4;#d4d4d4;#878787;#fca5a5;#bef264;#fde047;#93c5fd;#d8b4fe;#67e8f9;#f5f5f5
