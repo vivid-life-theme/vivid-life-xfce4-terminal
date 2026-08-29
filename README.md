@@ -20,9 +20,12 @@ Each flavor is available in six accent variants: **Red · Orange · Yellow · Gr
 ## Install
 
 ```bash
-mkdir -p ~/.local/share/xfce4/terminal/colorschemes
-cp themes/*.theme ~/.local/share/xfce4/terminal/colorschemes/
+git clone https://github.com/vivid-life-theme/vivid-life-xfce4-terminal.git
+cd vivid-life-xfce4-terminal
+./install.sh
 ```
+
+`git clone` (rather than a zip download) means a later `git pull` picks up new themes. Prefer manual copying? `mkdir -p ~/.local/share/xfce4/terminal/colorschemes && cp themes/*.theme ~/.local/share/xfce4/terminal/colorschemes/` does the same thing.
 
 ### Choose a theme
 
