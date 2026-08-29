@@ -1,5 +1,5 @@
 {
-  "name": "vivid-life-xfce-terminal",
+  "name": "vivid-life-xfce4-terminal",
   "description": "A multi-flavor color theme for Xfce Terminal. 4 flavors × 6 variants = 24 themes. WCAG AA verified.",
   "version": "0.1.0",
   "private": true,
@@ -8,13 +8,13 @@
     "name": "Michael van Laar",
     "email": "michael@van-laar.de"
   },
-  "homepage": "https://github.com/vivid-life-theme/vivid-life-xfce-terminal",
+  "homepage": "https://github.com/vivid-life-theme/vivid-life-xfce4-terminal",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vivid-life-theme/vivid-life-xfce-terminal.git"
+    "url": "git+https://github.com/vivid-life-theme/vivid-life-xfce4-terminal.git"
   },
   "bugs": {
-    "url": "https://github.com/vivid-life-theme/vivid-life-xfce-terminal/issues"
+    "url": "https://github.com/vivid-life-theme/vivid-life-xfce4-terminal/issues"
   },
   "keywords": [
     "xfce4-terminal",
