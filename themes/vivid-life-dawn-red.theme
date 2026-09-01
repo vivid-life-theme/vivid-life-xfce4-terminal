@@ -1,13 +1,13 @@
 [Scheme]
 Name=Vivid Life · Dawn · Red
 ColorForeground=#171717
-ColorBackground=#f5f5f5
+ColorBackground=#d4d4d4
 ColorCursor=#7f1d1d
-ColorCursorForeground=#f5f5f5
+ColorCursorForeground=#d4d4d4
 ColorCursorUseDefault=FALSE
 ColorSelection=#171717
-ColorSelectionBackground=#d2b4b4
+ColorSelectionBackground=#ba9d9d
 ColorSelectionUseDefault=FALSE
 ColorBoldUseDefault=TRUE
 TabActivityColor=#713f12
-ColorPalette=#171717;#b91c1c;#4d7c0f;#a16207;#1d4ed8;#7e22ce;#0e7490;#d4d4d4;#656565;#7f1d1d;#365314;#713f12;#1e3a8a;#581c87;#164e63;#f5f5f5
+ColorPalette=#171717;#991b1b;#3f6212;#854d0e;#1e40af;#6b21a8;#155e75;#d4d4d4;#525252;#7f1d1d;#365314;#713f12;#1e3a8a;#581c87;#164e63;#f5f5f5
