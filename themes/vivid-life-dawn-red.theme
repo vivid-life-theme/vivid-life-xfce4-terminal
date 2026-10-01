@@ -2,11 +2,11 @@
 Name=Vivid Life · Dawn · Red
 ColorForeground=#171717
 ColorBackground=#d4d4d4
-ColorCursor=#7f1d1d
+ColorCursor=#991b1b
 ColorCursorForeground=#d4d4d4
 ColorCursorUseDefault=FALSE
 ColorSelection=#171717
-ColorSelectionBackground=#ba9d9d
+ColorSelectionBackground=#fee2e2
 ColorSelectionUseDefault=FALSE
 ColorBoldUseDefault=TRUE
 TabActivityColor=#713f12

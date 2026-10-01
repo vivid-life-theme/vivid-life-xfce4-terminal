@@ -2,11 +2,11 @@
 Name=Vivid Life · Noon · Yellow
 ColorForeground=#171717
 ColorBackground=#ffffff
-ColorCursor=#713f12
+ColorCursor=#854d0e
 ColorCursorForeground=#ffffff
 ColorCursorUseDefault=FALSE
 ColorSelection=#171717
-ColorSelectionBackground=#d4c5b8
+ColorSelectionBackground=#fef1ac
 ColorSelectionUseDefault=FALSE
 ColorBoldUseDefault=TRUE
 TabActivityColor=#713f12

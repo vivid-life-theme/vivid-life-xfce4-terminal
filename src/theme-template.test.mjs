@@ -71,20 +71,16 @@ test("ColorCursorForeground matches the VS Code port's terminalCursor.background
   }
 });
 
-test("ColorSelectionBackground is accent-tinted, matching the VS Code port's terminal.selectionBackground", () => {
-  const content = buildTheme("twilight", "green", tokens);
-  const vars = parseVars(content);
-  // Not the flat, variant-independent state.selection token.
-  assert.notEqual(
-    vars.ColorSelectionBackground,
-    tokens.flavors.twilight.state.selection,
-  );
-  // Different variants of the same flavor must produce different selection colors.
-  const other = parseVars(buildTheme("twilight", "red", tokens));
-  assert.notEqual(
-    vars.ColorSelectionBackground,
-    other.ColorSelectionBackground,
-  );
+test("selection colors come from the overlay.selection terminal contract", () => {
+  for (const flavor of FLAVORS) {
+    for (const variant of VARIANTS) {
+      const vars = parseVars(buildTheme(flavor, variant, tokens));
+      const { flat, foreground } =
+        tokens.flavors[flavor].overlay[variant].selection.terminal;
+      assert.equal(vars.ColorSelectionBackground, flat);
+      assert.equal(vars.ColorSelection, foreground);
+    }
+  }
 });
 
 test("ColorPalette follows black,red,green,yellow,blue,magenta,cyan,white + bright_* order", () => {

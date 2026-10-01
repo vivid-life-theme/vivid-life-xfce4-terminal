@@ -48,25 +48,6 @@ function resolveAccent(tokens, flavor, variant) {
   return tokens.palette[variant][shade];
 }
 
-// xfce4-terminal's .theme keys don't reliably support alpha hex, so unlike
-// the VS Code port's `withAlpha(accent, ALPHA.a30)` (composited live by the
-// editor), we pre-flatten the same 30%-accent-over-background blend into an
-// opaque color here.
-function mix(hexA, hexB, ratio) {
-  const a = hexA
-    .slice(1)
-    .match(/../g)
-    .map((h) => parseInt(h, 16));
-  const b = hexB
-    .slice(1)
-    .match(/../g)
-    .map((h) => parseInt(h, 16));
-  const mixed = a.map((channel, i) =>
-    Math.round(channel * ratio + b[i] * (1 - ratio)),
-  );
-  return `#${mixed.map((c) => c.toString(16).padStart(2, "0")).join("")}`;
-}
-
 export function buildTheme(flavor, variant, tokens) {
   const f = tokens.flavors[flavor];
   const { surface, text, semantic, ansi } = f;
@@ -76,10 +57,10 @@ export function buildTheme(flavor, variant, tokens) {
   // Text under a block cursor takes the terminal's own background color —
   // same convention as the VS Code port's terminalCursor.background.
   const cursorForeground = surface.bg_terminal;
-  // Accent-tinted selection, matching the VS Code port's
-  // terminal.selectionBackground (withAlpha(accent, 30%)) flattened to an
-  // opaque color, since .theme keys don't reliably support alpha hex.
-  const selectionBackground = mix(accent, surface.bg_terminal, 0.3);
+  // The foundation's terminal selection contract: an opaque flat color
+  // (.theme keys don't reliably support alpha hex) plus the foreground
+  // terminals redraw selected text in, gated at 4.5:1.
+  const selection = f.overlay[variant].selection.terminal;
 
   const lines = [
     "[Scheme]",
@@ -89,8 +70,8 @@ export function buildTheme(flavor, variant, tokens) {
     `ColorCursor=${accent}`,
     `ColorCursorForeground=${cursorForeground}`,
     "ColorCursorUseDefault=FALSE",
-    `ColorSelection=${text.fg}`,
-    `ColorSelectionBackground=${selectionBackground}`,
+    `ColorSelection=${selection.foreground}`,
+    `ColorSelectionBackground=${selection.flat}`,
     "ColorSelectionUseDefault=FALSE",
     "ColorBoldUseDefault=TRUE",
     `TabActivityColor=${semantic.warning}`,

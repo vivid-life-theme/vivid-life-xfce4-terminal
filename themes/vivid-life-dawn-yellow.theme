@@ -2,11 +2,11 @@
 Name=Vivid Life · Dawn · Yellow
 ColorForeground=#171717
 ColorBackground=#d4d4d4
-ColorCursor=#713f12
+ColorCursor=#854d0e
 ColorCursorForeground=#d4d4d4
 ColorCursorUseDefault=FALSE
 ColorSelection=#171717
-ColorSelectionBackground=#b6a79a
+ColorSelectionBackground=#fef9c3
 ColorSelectionUseDefault=FALSE
 ColorBoldUseDefault=TRUE
 TabActivityColor=#713f12
