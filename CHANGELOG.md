@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-01
+
+### Changed
+
+- Bumped `@vivid-life-theme/design-system` to 0.11.0, regenerating all 24 theme files
+- Selection colors (`ColorSelectionBackground`, `ColorSelection`) now come from the foundation's `overlay.<variant>.selection.terminal` contract instead of a manual 30% accent blend, so selected text meets 4.5:1 contrast
+- Midnight ANSI blue/magenta moved to the 500 rung (previously identical to their bright versions); dawn/noon red, yellow and green accents moved from shade 900 to 800
+
 ## [0.1.0] - 2026-09-01
 
 ### Added
