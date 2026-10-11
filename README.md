@@ -34,22 +34,23 @@ Why `git clone` and not a zip download? Because a later `git pull` + `./install.
 ### Manual install (no script)
 
 ```bash
-mkdir -p ~/.local/share/xfce4/terminal/colorschemes
-cp themes/*.theme ~/.local/share/xfce4/terminal/colorschemes/
+colorschemes="${XDG_DATA_HOME:-$HOME/.local/share}/xfce4/terminal/colorschemes"
+mkdir -p "$colorschemes"
+cp themes/*.theme "$colorschemes/"
 ```
 
 Same result, more typing.
 
 ### Choose a theme
 
-Xfce Terminal → **Edit → Preferences → Appearance → Color Scheme**, or per profile in `~/.config/xfce4/terminal/terminalrc` (`ColorPalette`/`ColorScheme`, see `man xfce4-terminal`). All 24 schemes appear as `vivid-life-<flavor>-<variant>`.
+Xfce Terminal → **Edit → Preferences → Appearance → Color Scheme**, or per profile in `~/.config/xfce4/terminal/terminalrc` (`ColorPalette`, see `man xfce4-terminal`). All 24 schemes appear as `vivid-life-<flavor>-<variant>`.
 
 Default: **Midnight · Purple** (`vivid-life-midnight-purple`), matching the design system's overall default.
 
 ### Uninstall
 
 ```bash
-rm ~/.local/share/xfce4/terminal/colorschemes/vivid-life-*.theme
+rm "${XDG_DATA_HOME:-$HOME/.local/share}"/xfce4/terminal/colorschemes/vivid-life-*.theme
 ```
 
 ## Scope
