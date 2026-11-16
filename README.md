@@ -8,10 +8,10 @@ In time-of-day order. This port sets the terminal background itself, using the f
 
 | Flavor       | Type  | Terminal background |
 | ------------ | ----- | ------------------- |
-| **Midnight** | dark  | `#0a0a0a`           |
-| **Twilight** | dark  | `#333333`           |
+| **Midnight** | dark  | `#171717`           |
+| **Twilight** | dark  | `#404040`           |
 | **Dawn**     | light | `#d4d4d4`           |
-| **Noon**     | light | `#ffffff`           |
+| **Noon**     | light | `#f5f5f5`           |
 
 The shell and prompt ports ([fish](https://github.com/vivid-life-theme/vivid-life-fish), [Starship](https://github.com/vivid-life-theme/vivid-life-starship), [PowerShell](https://github.com/vivid-life-theme/vivid-life-powershell)) and the [Claude Code port](https://github.com/vivid-life-theme/vivid-life-claude-code) are all checked against these exact backgrounds, so pick the same flavor on both sides. Going all in? The [Xfce desktop port](https://github.com/vivid-life-theme/vivid-life-xfce) themes the rest of the screen.
 
