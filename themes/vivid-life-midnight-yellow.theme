@@ -1,12 +1,12 @@
 [Scheme]
 Name=Vivid Life · Midnight · Yellow
 ColorForeground=#f5f5f5
-ColorBackground=#0a0a0a
+ColorBackground=#171717
 ColorCursor=#eab308
-ColorCursorForeground=#0a0a0a
+ColorCursorForeground=#171717
 ColorCursorUseDefault=FALSE
 ColorSelection=#f5f5f5
-ColorSelectionBackground=#3e250e
+ColorSelectionBackground=#4c3e13
 ColorSelectionUseDefault=FALSE
 ColorBoldUseDefault=TRUE
 TabActivityColor=#fde047
