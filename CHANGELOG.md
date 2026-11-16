@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Design-system dependency bumped to 0.14.1; themes regenerated. The terminal background is now the flavor's editor background (`#171717` / `#404040` / `#d4d4d4` / `#f5f5f5`, was `#0a0a0a` / `#333333` / `#d4d4d4` / `#ffffff`), with the cursor foreground following it. Midnight and Twilight selections are now an accent tint, and Twilight / Noon `bright_black` change slightly to keep 4.5:1. Dawn is unchanged.
+- Design-system dependency bumped to 0.14.2. It only changes Dawn's window-frame colours, which a terminal colour scheme doesn't use, so the themes are unchanged.
 
 ## [0.2.0] - 2026-10-01
 
